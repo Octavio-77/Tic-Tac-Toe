@@ -11,7 +11,7 @@ int main(){
 	int status = 0; // 0 = draw | 1 = p1 win | 2 = p2 win
 
 	for(turns = 1; turns <= 9; ++turns){
-		printf("Player n°%s turn\n", (turns == 1 || turns == 3 || turns == 5 || turns == 7 || turns == 9) ? "1":"2");
+		printf("Player n°%s turn\n", (turn % 2 != 0) ? "1":"2");
 		showTable(table);
 		printf("Choose a number: ");
 		scanf("%d", &currentTurn);
@@ -64,7 +64,7 @@ void showTable(char table[]){
 
 int gameStatus(char table[], int turns){
 	int player;
-	if(turns == 1 || turns == 3 || turns == 5 || turns == 7 || turns == 9){
+	if(turns % 2 != 0){
 		player = 1;
 	}
 	else{
