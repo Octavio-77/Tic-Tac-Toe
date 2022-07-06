@@ -72,7 +72,6 @@ int playerTurn(int turns, char table[]){
 // 1 vs 1:
 void mode1(int turns, char table[]){
 	for(turns=1; turns<=9; ++turns){
-		printf("turns = %d\n", turns);
 		printf("\n\nPlayer n°%s turn\n", (turns % 2 != 0) ? "1":"2");
 		if(playerTurn(turns, table)){
 			--turns;
