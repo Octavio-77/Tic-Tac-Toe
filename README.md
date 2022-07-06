@@ -1,2 +1,2 @@
 # Tic-Tac-Toe
-this is one of my first proyects
+this is my first proyects
